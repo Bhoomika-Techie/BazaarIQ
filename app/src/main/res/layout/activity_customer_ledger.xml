@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1A237E"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvCustomerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp">
+
+            <TextView
+                android:id="@+id/tvTotalUdari"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Udari: ₹0"
+                android:textColor="#FF8A80"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tvTotalPaid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Total Paid: ₹0"
+                android:textColor="#B9F6CA"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPendingAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending: ₹0"
+            android:textColor="#FF5252"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnWhatsapp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="📱 Send WhatsApp Reminder"
+        android:textSize="16sp"
+        android:backgroundTint="#25D366"
+        android:layout_margin="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transaction History"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvTransactions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No transactions yet"
+            android:textSize="16sp"
+            android:padding="16dp"
+            android:lineSpacingExtra="8dp"/>
+
+    </ScrollView>
+
+</LinearLayout>
